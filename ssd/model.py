@@ -212,8 +212,8 @@ if __name__ == "__main__":
     tail = tail.eval().cuda()
     model = model.eval().cuda()
 
-    inputs = [utils.prepare_input("./kitchen.jpg")]
     inputs = [utils.prepare_input("./kitti_1.png")]
+    inputs = [utils.prepare_input("./kitchen.jpg")]
     print("inputs shape:", inputs[0].shape)
     x = utils.prepare_tensor(inputs, should_half = False)
 
