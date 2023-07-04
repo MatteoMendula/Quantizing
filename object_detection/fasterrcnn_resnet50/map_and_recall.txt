@@ -1,0 +1,484 @@
+mAP of cat number: 1, name: person is: 0.37911662487070547
+Average Recall of cat number: 1 , name: person is: 0.30895459384077933
+Total images used 1049 out of 2693
+mAP of cat number: 2, name: bicycle is: 0.31746031746031744
+Average Recall of cat number: 2 , name: bicycle is: 0.4211182336182336
+Total images used 12 out of 149
+mAP of cat number: 3, name: car is: 0.19671201814058956
+Average Recall of cat number: 3 , name: car is: 0.13416768416768415
+Total images used 42 out of 535
+mAP of cat number: 4, name: motorcycle is: 0.5069347319347319
+Average Recall of cat number: 4 , name: motorcycle is: 0.5672857404564721
+Total images used 44 out of 159
+mAP of cat number: 5, name: airplane is: 0.5958333333333333
+Average Recall of cat number: 5 , name: airplane is: 0.6901455026455027
+Total images used 24 out of 97
+mAP of cat number: 6, name: bus is: 0.6965116279069767
+Average Recall of cat number: 6 , name: bus is: 0.6691860465116278
+Total images used 43 out of 189
+mAP of cat number: 7, name: train is: 0.7976190476190477
+Average Recall of cat number: 7 , name: train is: 0.7839105339105339
+Total images used 42 out of 157
+mAP of cat number: 8, name: truck is: 0.49264705882352944
+Average Recall of cat number: 8 , name: truck is: 0.48872549019607847
+Total images used 34 out of 250
+mAP of cat number: 9, name: boat is: 0.23333333333333334
+Average Recall of cat number: 9 , name: boat is: 0.3333333333333333
+Total images used 15 out of 121
+mAP of cat number: 10, name: traffic light is: 0.3333333333333333
+Average Recall of cat number: 10 , name: traffic light is: 0.05833333333333333
+Total images used 6 out of 191
+mAP of cat number: 11, name: fire hydrant is: 0.6666666666666666
+Average Recall of cat number: 11 , name: fire hydrant is: 0.8333333333333334
+Total images used 6 out of 86
+mAP of cat number: 13, name: stop sign is: 0.7777777777777778
+Average Recall of cat number: 13 , name: stop sign is: 0.7777777777777778
+Total images used 9 out of 69
+mAP of cat number: 14, name: parking meter is: 0.5
+Average Recall of cat number: 14 , name: parking meter is: 0.5
+Total images used 2 out of 37
+mAP of cat number: 15, name: bench is: 0.42424242424242425
+Average Recall of cat number: 15 , name: bench is: 0.5454545454545454
+Total images used 11 out of 235
+mAP of cat number: 16, name: bird is: 0.10256410256410256
+Average Recall of cat number: 16 , name: bird is: 0.09615384615384616
+Total images used 13 out of 125
+mAP of cat number: 17, name: cat is: 0.789855072463768
+Average Recall of cat number: 17 , name: cat is: 0.8387681159420289
+Total images used 46 out of 184
+mAP of cat number: 18, name: dog is: 0.7268518518518517
+Average Recall of cat number: 18 , name: dog is: 0.8125
+Total images used 36 out of 177
+mAP of cat number: 19, name: horse is: 0.33794162826420887
+Average Recall of cat number: 19 , name: horse is: 0.4225806451612903
+Total images used 31 out of 128
+mAP of cat number: 20, name: sheep is: 0.16666666666666666
+Average Recall of cat number: 20 , name: sheep is: 0.18229965773633897
+Total images used 18 out of 65
+mAP of cat number: 21, name: cow is: 0.23063568376068377
+Average Recall of cat number: 21 , name: cow is: 0.21664939998273333
+Total images used 24 out of 87
+mAP of cat number: 22, name: elephant is: 0.3284241081659155
+Average Recall of cat number: 22 , name: elephant is: 0.389798932723461
+Total images used 53 out of 89
+mAP of cat number: 23, name: bear is: 0.6224999999999999
+Average Recall of cat number: 23 , name: bear is: 0.6375
+Total images used 20 out of 49
+mAP of cat number: 24, name: zebra is: 0.47052154195011336
+Average Recall of cat number: 24 , name: zebra is: 0.43488897723591585
+Total images used 49 out of 85
+mAP of cat number: 25, name: giraffe is: 0.37093495934959353
+Average Recall of cat number: 25 , name: giraffe is: 0.34298196430240163
+Total images used 41 out of 101
+mAP of cat number: 27, name: backpack is: 0.6666666666666666
+Average Recall of cat number: 27 , name: backpack is: 0.6666666666666666
+Total images used 3 out of 228
+mAP of cat number: 28, name: umbrella is: 0.5261904761904762
+Average Recall of cat number: 28 , name: umbrella is: 0.43712715855573
+Total images used 35 out of 174
+mAP of cat number: 31, name: handbag is: 0.0
+Average Recall of cat number: 31 , name: handbag is: 0.0
+Total images used 3 out of 292
+mAP of cat number: 32, name: tie is: nan
+Average Recall of cat number: 32 , name: tie is: nan
+Total images used 0 out of 145
+mAP of cat number: 33, name: suitcase is: 0.4666666666666666
+Average Recall of cat number: 33 , name: suitcase is: 0.34102852852852855
+Total images used 12 out of 105
+mAP of cat number: 34, name: frisbee is: nan
+Average Recall of cat number: 34 , name: frisbee is: nan
+Total images used 0 out of 84
+mAP of cat number: 35, name: skis is: 0.0
+Average Recall of cat number: 35 , name: skis is: 0.0
+Total images used 2 out of 120
+mAP of cat number: 36, name: snowboard is: nan
+Average Recall of cat number: 36 , name: snowboard is: nan
+Total images used 0 out of 49
+mAP of cat number: 37, name: sports ball is: 0.5
+Average Recall of cat number: 37 , name: sports ball is: 0.5
+Total images used 2 out of 169
+mAP of cat number: 38, name: kite is: 0.15384615384615385
+Average Recall of cat number: 38 , name: kite is: 0.23076923076923078
+Total images used 13 out of 91
+mAP of cat number: 39, name: baseball bat is: 0.5
+Average Recall of cat number: 39 , name: baseball bat is: 0.5
+Total images used 4 out of 97
+mAP of cat number: 40, name: baseball glove is: nan
+Average Recall of cat number: 40 , name: baseball glove is: nan
+Total images used 0 out of 100
+mAP of cat number: 41, name: skateboard is: 0.5
+Average Recall of cat number: 41 , name: skateboard is: 0.3333333333333333
+Total images used 2 out of 127
+mAP of cat number: 42, name: surfboard is: 0.36666666666666664
+Average Recall of cat number: 42 , name: surfboard is: 0.4013513513513514
+Total images used 5 out of 149
+mAP of cat number: 43, name: tennis racket is: 0.6666666666666666
+Average Recall of cat number: 43 , name: tennis racket is: 0.6666666666666666
+Total images used 3 out of 167
+mAP of cat number: 44, name: bottle is: 0.33235294117647063
+Average Recall of cat number: 44 , name: bottle is: 0.33333333333333337
+Total images used 17 out of 379
+mAP of cat number: 46, name: wine glass is: 0.5555555555555556
+Average Recall of cat number: 46 , name: wine glass is: 0.32253086419753085
+Total images used 9 out of 110
+mAP of cat number: 47, name: cup is: 0.5151515151515151
+Average Recall of cat number: 47 , name: cup is: 0.4383838383838384
+Total images used 22 out of 390
+mAP of cat number: 48, name: fork is: 0.8333333333333334
+Average Recall of cat number: 48 , name: fork is: 1.0
+Total images used 3 out of 155
+mAP of cat number: 49, name: knife is: 0.75
+Average Recall of cat number: 49 , name: knife is: 0.75
+Total images used 4 out of 181
+mAP of cat number: 50, name: spoon is: 0.6666666666666666
+Average Recall of cat number: 50 , name: spoon is: 0.6666666666666666
+Total images used 3 out of 153
+mAP of cat number: 51, name: bowl is: 0.44362745098039214
+Average Recall of cat number: 51 , name: bowl is: 0.4314814814814814
+Total images used 51 out of 314
+mAP of cat number: 52, name: banana is: 0.183826176973625
+Average Recall of cat number: 52 , name: banana is: 0.2571903400841391
+Total images used 23 out of 103
+mAP of cat number: 53, name: apple is: 0.08333333333333334
+Average Recall of cat number: 53 , name: apple is: 0.03373015873015873
+Total images used 7 out of 76
+mAP of cat number: 54, name: sandwich is: 0.41534391534391535
+Average Recall of cat number: 54 , name: sandwich is: 0.4388888888888889
+Total images used 18 out of 98
+mAP of cat number: 55, name: orange is: 0.017857142857142856
+Average Recall of cat number: 55 , name: orange is: 0.0125
+Total images used 8 out of 85
+mAP of cat number: 56, name: broccoli is: 0.014035087719298246
+Average Recall of cat number: 56 , name: broccoli is: 0.07017543859649122
+Total images used 19 out of 71
+mAP of cat number: 57, name: carrot is: 0.020833333333333332
+Average Recall of cat number: 57 , name: carrot is: 0.05
+Total images used 8 out of 81
+mAP of cat number: 58, name: hot dog is: 0.4
+Average Recall of cat number: 58 , name: hot dog is: 0.25
+Total images used 5 out of 51
+mAP of cat number: 59, name: pizza is: 0.7954260651629073
+Average Recall of cat number: 59 , name: pizza is: 0.781578947368421
+Total images used 38 out of 153
+mAP of cat number: 60, name: donut is: 0.09722222222222222
+Average Recall of cat number: 60 , name: donut is: 0.02238095238095238
+Total images used 12 out of 62
+mAP of cat number: 61, name: cake is: 0.4583333333333333
+Average Recall of cat number: 61 , name: cake is: 0.5213068181818181
+Total images used 16 out of 124
+mAP of cat number: 62, name: chair is: 0.18140830800405267
+Average Recall of cat number: 62 , name: chair is: 0.2040124560462483
+Total images used 47 out of 580
+mAP of cat number: 63, name: couch is: 0.3708333333333333
+Average Recall of cat number: 63 , name: couch is: 0.5166666666666667
+Total images used 20 out of 195
+mAP of cat number: 64, name: potted plant is: 0.5490196078431372
+Average Recall of cat number: 64 , name: potted plant is: 0.5005656108597285
+Total images used 17 out of 172
+mAP of cat number: 65, name: bed is: 0.7
+Average Recall of cat number: 65 , name: bed is: 0.78
+Total images used 25 out of 149
+mAP of cat number: 67, name: dining table is: 0.7245901639344264
+Average Recall of cat number: 67 , name: dining table is: 0.7848816029143897
+Total images used 122 out of 501
+mAP of cat number: 70, name: toilet is: 0.4166666666666667
+Average Recall of cat number: 70 , name: toilet is: 0.4791666666666667
+Total images used 12 out of 149
+mAP of cat number: 72, name: tv is: 0.5681818181818182
+Average Recall of cat number: 72 , name: tv is: 0.5818181818181818
+Total images used 33 out of 207
+mAP of cat number: 73, name: laptop is: 0.7857142857142857
+Average Recall of cat number: 73 , name: laptop is: 0.7261904761904763
+Total images used 28 out of 183
+mAP of cat number: 74, name: mouse is: 1.0
+Average Recall of cat number: 74 , name: mouse is: 1.0
+Total images used 1 out of 88
+mAP of cat number: 75, name: remote is: 0.0
+Average Recall of cat number: 75 , name: remote is: 0.0
+Total images used 1 out of 145
+mAP of cat number: 76, name: keyboard is: 0.6
+Average Recall of cat number: 76 , name: keyboard is: 0.8
+Total images used 5 out of 106
+mAP of cat number: 77, name: cell phone is: 0.5555555555555555
+Average Recall of cat number: 77 , name: cell phone is: 0.6666666666666666
+Total images used 3 out of 214
+mAP of cat number: 78, name: microwave is: 1.0
+Average Recall of cat number: 78 , name: microwave is: 1.0
+Total images used 3 out of 54
+mAP of cat number: 79, name: oven is: 0.5277777777777778
+Average Recall of cat number: 79 , name: oven is: 0.6666666666666666
+Total images used 12 out of 115
+mAP of cat number: 80, name: toaster is: nan
+Average Recall of cat number: 80 , name: toaster is: nan
+Total images used 0 out of 8
+mAP of cat number: 81, name: sink is: 0.8
+Average Recall of cat number: 81 , name: sink is: 0.8
+Total images used 5 out of 187
+mAP of cat number: 82, name: refrigerator is: 0.7196969696969696
+Average Recall of cat number: 82 , name: refrigerator is: 0.7424242424242423
+Total images used 22 out of 101
+mAP of cat number: 84, name: book is: 0.06489820808706256
+Average Recall of cat number: 84 , name: book is: 0.018160980848575082
+Total images used 19 out of 230
+mAP of cat number: 85, name: clock is: 0.6
+Average Recall of cat number: 85 , name: clock is: 0.8
+Total images used 5 out of 204
+mAP of cat number: 86, name: vase is: 0.4333333333333334
+Average Recall of cat number: 86 , name: vase is: 0.24666666666666667
+Total images used 5 out of 137
+mAP of cat number: 87, name: scissors is: 0.6666666666666666
+Average Recall of cat number: 87 , name: scissors is: 0.6666666666666666
+Total images used 3 out of 28
+mAP of cat number: 88, name: teddy bear is: 0.3441077441077441
+Average Recall of cat number: 88 , name: teddy bear is: 0.4229669140383426
+Total images used 33 out of 94
+mAP of cat number: 89, name: hair drier is: nan
+Average Recall of cat number: 89 , name: hair drier is: nan
+Total images used 0 out of 9
+mAP of cat number: 90, name: toothbrush is: nan
+Average Recall of cat number: 90 , name: toothbrush is: nan
+Total images used 0 out of 34
+Average mAP is: nan
+mIoU: nan
+mAP of cat number: 1, name: person is: 0.37911662487070547
+Average Recall of cat number: 1 , name: person is: 0.30895459384077933
+Total images used 1049 out of 2693
+mAP of cat number: 2, name: bicycle is: 0.31746031746031744
+Average Recall of cat number: 2 , name: bicycle is: 0.4211182336182336
+Total images used 12 out of 149
+mAP of cat number: 3, name: car is: 0.19671201814058956
+Average Recall of cat number: 3 , name: car is: 0.13416768416768415
+Total images used 42 out of 535
+mAP of cat number: 4, name: motorcycle is: 0.5069347319347319
+Average Recall of cat number: 4 , name: motorcycle is: 0.5672857404564721
+Total images used 44 out of 159
+mAP of cat number: 5, name: airplane is: 0.5958333333333333
+Average Recall of cat number: 5 , name: airplane is: 0.6901455026455027
+Total images used 24 out of 97
+mAP of cat number: 6, name: bus is: 0.6965116279069767
+Average Recall of cat number: 6 , name: bus is: 0.6691860465116278
+Total images used 43 out of 189
+mAP of cat number: 7, name: train is: 0.7976190476190477
+Average Recall of cat number: 7 , name: train is: 0.7839105339105339
+Total images used 42 out of 157
+mAP of cat number: 8, name: truck is: 0.49264705882352944
+Average Recall of cat number: 8 , name: truck is: 0.48872549019607847
+Total images used 34 out of 250
+mAP of cat number: 9, name: boat is: 0.23333333333333334
+Average Recall of cat number: 9 , name: boat is: 0.3333333333333333
+Total images used 15 out of 121
+mAP of cat number: 10, name: traffic light is: 0.3333333333333333
+Average Recall of cat number: 10 , name: traffic light is: 0.05833333333333333
+Total images used 6 out of 191
+mAP of cat number: 11, name: fire hydrant is: 0.6666666666666666
+Average Recall of cat number: 11 , name: fire hydrant is: 0.8333333333333334
+Total images used 6 out of 86
+mAP of cat number: 13, name: stop sign is: 0.7777777777777778
+Average Recall of cat number: 13 , name: stop sign is: 0.7777777777777778
+Total images used 9 out of 69
+mAP of cat number: 14, name: parking meter is: 0.5
+Average Recall of cat number: 14 , name: parking meter is: 0.5
+Total images used 2 out of 37
+mAP of cat number: 15, name: bench is: 0.42424242424242425
+Average Recall of cat number: 15 , name: bench is: 0.5454545454545454
+Total images used 11 out of 235
+mAP of cat number: 16, name: bird is: 0.10256410256410256
+Average Recall of cat number: 16 , name: bird is: 0.09615384615384616
+Total images used 13 out of 125
+mAP of cat number: 17, name: cat is: 0.789855072463768
+Average Recall of cat number: 17 , name: cat is: 0.8387681159420289
+Total images used 46 out of 184
+mAP of cat number: 18, name: dog is: 0.7268518518518517
+Average Recall of cat number: 18 , name: dog is: 0.8125
+Total images used 36 out of 177
+mAP of cat number: 19, name: horse is: 0.33794162826420887
+Average Recall of cat number: 19 , name: horse is: 0.4225806451612903
+Total images used 31 out of 128
+mAP of cat number: 20, name: sheep is: 0.16666666666666666
+Average Recall of cat number: 20 , name: sheep is: 0.18229965773633897
+Total images used 18 out of 65
+mAP of cat number: 21, name: cow is: 0.23063568376068377
+Average Recall of cat number: 21 , name: cow is: 0.21664939998273333
+Total images used 24 out of 87
+mAP of cat number: 22, name: elephant is: 0.3284241081659155
+Average Recall of cat number: 22 , name: elephant is: 0.389798932723461
+Total images used 53 out of 89
+mAP of cat number: 23, name: bear is: 0.6224999999999999
+Average Recall of cat number: 23 , name: bear is: 0.6375
+Total images used 20 out of 49
+mAP of cat number: 24, name: zebra is: 0.47052154195011336
+Average Recall of cat number: 24 , name: zebra is: 0.43488897723591585
+Total images used 49 out of 85
+mAP of cat number: 25, name: giraffe is: 0.37093495934959353
+Average Recall of cat number: 25 , name: giraffe is: 0.34298196430240163
+Total images used 41 out of 101
+mAP of cat number: 27, name: backpack is: 0.6666666666666666
+Average Recall of cat number: 27 , name: backpack is: 0.6666666666666666
+Total images used 3 out of 228
+mAP of cat number: 28, name: umbrella is: 0.5261904761904762
+Average Recall of cat number: 28 , name: umbrella is: 0.43712715855573
+Total images used 35 out of 174
+mAP of cat number: 31, name: handbag is: 0.0
+Average Recall of cat number: 31 , name: handbag is: 0.0
+Total images used 3 out of 292
+mAP of cat number: 32, name: tie is: nan
+Average Recall of cat number: 32 , name: tie is: nan
+Total images used 0 out of 145
+mAP of cat number: 33, name: suitcase is: 0.4666666666666666
+Average Recall of cat number: 33 , name: suitcase is: 0.34102852852852855
+Total images used 12 out of 105
+mAP of cat number: 34, name: frisbee is: nan
+Average Recall of cat number: 34 , name: frisbee is: nan
+Total images used 0 out of 84
+mAP of cat number: 35, name: skis is: 0.0
+Average Recall of cat number: 35 , name: skis is: 0.0
+Total images used 2 out of 120
+mAP of cat number: 36, name: snowboard is: nan
+Average Recall of cat number: 36 , name: snowboard is: nan
+Total images used 0 out of 49
+mAP of cat number: 37, name: sports ball is: 0.5
+Average Recall of cat number: 37 , name: sports ball is: 0.5
+Total images used 2 out of 169
+mAP of cat number: 38, name: kite is: 0.15384615384615385
+Average Recall of cat number: 38 , name: kite is: 0.23076923076923078
+Total images used 13 out of 91
+mAP of cat number: 39, name: baseball bat is: 0.5
+Average Recall of cat number: 39 , name: baseball bat is: 0.5
+Total images used 4 out of 97
+mAP of cat number: 40, name: baseball glove is: nan
+Average Recall of cat number: 40 , name: baseball glove is: nan
+Total images used 0 out of 100
+mAP of cat number: 41, name: skateboard is: 0.5
+Average Recall of cat number: 41 , name: skateboard is: 0.3333333333333333
+Total images used 2 out of 127
+mAP of cat number: 42, name: surfboard is: 0.36666666666666664
+Average Recall of cat number: 42 , name: surfboard is: 0.4013513513513514
+Total images used 5 out of 149
+mAP of cat number: 43, name: tennis racket is: 0.6666666666666666
+Average Recall of cat number: 43 , name: tennis racket is: 0.6666666666666666
+Total images used 3 out of 167
+mAP of cat number: 44, name: bottle is: 0.33235294117647063
+Average Recall of cat number: 44 , name: bottle is: 0.33333333333333337
+Total images used 17 out of 379
+mAP of cat number: 46, name: wine glass is: 0.5555555555555556
+Average Recall of cat number: 46 , name: wine glass is: 0.32253086419753085
+Total images used 9 out of 110
+mAP of cat number: 47, name: cup is: 0.5151515151515151
+Average Recall of cat number: 47 , name: cup is: 0.4383838383838384
+Total images used 22 out of 390
+mAP of cat number: 48, name: fork is: 0.8333333333333334
+Average Recall of cat number: 48 , name: fork is: 1.0
+Total images used 3 out of 155
+mAP of cat number: 49, name: knife is: 0.75
+Average Recall of cat number: 49 , name: knife is: 0.75
+Total images used 4 out of 181
+mAP of cat number: 50, name: spoon is: 0.6666666666666666
+Average Recall of cat number: 50 , name: spoon is: 0.6666666666666666
+Total images used 3 out of 153
+mAP of cat number: 51, name: bowl is: 0.44362745098039214
+Average Recall of cat number: 51 , name: bowl is: 0.4314814814814814
+Total images used 51 out of 314
+mAP of cat number: 52, name: banana is: 0.183826176973625
+Average Recall of cat number: 52 , name: banana is: 0.2571903400841391
+Total images used 23 out of 103
+mAP of cat number: 53, name: apple is: 0.08333333333333334
+Average Recall of cat number: 53 , name: apple is: 0.03373015873015873
+Total images used 7 out of 76
+mAP of cat number: 54, name: sandwich is: 0.41534391534391535
+Average Recall of cat number: 54 , name: sandwich is: 0.4388888888888889
+Total images used 18 out of 98
+mAP of cat number: 55, name: orange is: 0.017857142857142856
+Average Recall of cat number: 55 , name: orange is: 0.0125
+Total images used 8 out of 85
+mAP of cat number: 56, name: broccoli is: 0.014035087719298246
+Average Recall of cat number: 56 , name: broccoli is: 0.07017543859649122
+Total images used 19 out of 71
+mAP of cat number: 57, name: carrot is: 0.020833333333333332
+Average Recall of cat number: 57 , name: carrot is: 0.05
+Total images used 8 out of 81
+mAP of cat number: 58, name: hot dog is: 0.4
+Average Recall of cat number: 58 , name: hot dog is: 0.25
+Total images used 5 out of 51
+mAP of cat number: 59, name: pizza is: 0.7954260651629073
+Average Recall of cat number: 59 , name: pizza is: 0.781578947368421
+Total images used 38 out of 153
+mAP of cat number: 60, name: donut is: 0.09722222222222222
+Average Recall of cat number: 60 , name: donut is: 0.02238095238095238
+Total images used 12 out of 62
+mAP of cat number: 61, name: cake is: 0.4583333333333333
+Average Recall of cat number: 61 , name: cake is: 0.5213068181818181
+Total images used 16 out of 124
+mAP of cat number: 62, name: chair is: 0.18140830800405267
+Average Recall of cat number: 62 , name: chair is: 0.2040124560462483
+Total images used 47 out of 580
+mAP of cat number: 63, name: couch is: 0.3708333333333333
+Average Recall of cat number: 63 , name: couch is: 0.5166666666666667
+Total images used 20 out of 195
+mAP of cat number: 64, name: potted plant is: 0.5490196078431372
+Average Recall of cat number: 64 , name: potted plant is: 0.5005656108597285
+Total images used 17 out of 172
+mAP of cat number: 65, name: bed is: 0.7
+Average Recall of cat number: 65 , name: bed is: 0.78
+Total images used 25 out of 149
+mAP of cat number: 67, name: dining table is: 0.7245901639344264
+Average Recall of cat number: 67 , name: dining table is: 0.7848816029143897
+Total images used 122 out of 501
+mAP of cat number: 70, name: toilet is: 0.4166666666666667
+Average Recall of cat number: 70 , name: toilet is: 0.4791666666666667
+Total images used 12 out of 149
+mAP of cat number: 72, name: tv is: 0.5681818181818182
+Average Recall of cat number: 72 , name: tv is: 0.5818181818181818
+Total images used 33 out of 207
+mAP of cat number: 73, name: laptop is: 0.7857142857142857
+Average Recall of cat number: 73 , name: laptop is: 0.7261904761904763
+Total images used 28 out of 183
+mAP of cat number: 74, name: mouse is: 1.0
+Average Recall of cat number: 74 , name: mouse is: 1.0
+Total images used 1 out of 88
+mAP of cat number: 75, name: remote is: 0.0
+Average Recall of cat number: 75 , name: remote is: 0.0
+Total images used 1 out of 145
+mAP of cat number: 76, name: keyboard is: 0.6
+Average Recall of cat number: 76 , name: keyboard is: 0.8
+Total images used 5 out of 106
+mAP of cat number: 77, name: cell phone is: 0.5555555555555555
+Average Recall of cat number: 77 , name: cell phone is: 0.6666666666666666
+Total images used 3 out of 214
+mAP of cat number: 78, name: microwave is: 1.0
+Average Recall of cat number: 78 , name: microwave is: 1.0
+Total images used 3 out of 54
+mAP of cat number: 79, name: oven is: 0.5277777777777778
+Average Recall of cat number: 79 , name: oven is: 0.6666666666666666
+Total images used 12 out of 115
+mAP of cat number: 80, name: toaster is: nan
+Average Recall of cat number: 80 , name: toaster is: nan
+Total images used 0 out of 8
+mAP of cat number: 81, name: sink is: 0.8
+Average Recall of cat number: 81 , name: sink is: 0.8
+Total images used 5 out of 187
+mAP of cat number: 82, name: refrigerator is: 0.7196969696969696
+Average Recall of cat number: 82 , name: refrigerator is: 0.7424242424242423
+Total images used 22 out of 101
+mAP of cat number: 84, name: book is: 0.06489820808706256
+Average Recall of cat number: 84 , name: book is: 0.018160980848575082
+Total images used 19 out of 230
+mAP of cat number: 85, name: clock is: 0.6
+Average Recall of cat number: 85 , name: clock is: 0.8
+Total images used 5 out of 204
+mAP of cat number: 86, name: vase is: 0.4333333333333334
+Average Recall of cat number: 86 , name: vase is: 0.24666666666666667
+Total images used 5 out of 137
+mAP of cat number: 87, name: scissors is: 0.6666666666666666
+Average Recall of cat number: 87 , name: scissors is: 0.6666666666666666
+Total images used 3 out of 28
+mAP of cat number: 88, name: teddy bear is: 0.3441077441077441
+Average Recall of cat number: 88 , name: teddy bear is: 0.4229669140383426
+Total images used 33 out of 94
+mAP of cat number: 89, name: hair drier is: nan
+Average Recall of cat number: 89 , name: hair drier is: nan
+Total images used 0 out of 9
+mAP of cat number: 90, name: toothbrush is: nan
+Average Recall of cat number: 90 , name: toothbrush is: nan
+Total images used 0 out of 34
+Average mAP is: 0.0
+mIoU: 0.0
