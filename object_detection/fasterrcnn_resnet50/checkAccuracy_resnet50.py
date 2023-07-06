@@ -39,10 +39,11 @@ def evaluate_coco(img_path, set_name, image_ids, coco, model, weights, jpeg_comp
         # scaled_height = int(round(height * scale_factor))
         # image = image.resize((scaled_width,scaled_height), Image.Resampling.LANCZOS)
 
-        buffer = BytesIO()
-        image.save(buffer, "JPEG", quality=jpeg_compression)
-        buffer.seek(0)
-        image = Image.open(buffer)
+        if jpeg_compression != 100:
+            buffer = BytesIO()
+            image.save(buffer, "JPEG", quality=jpeg_compression)
+            buffer.seek(0)
+            image = Image.open(buffer)
 
         # NB count inference time from here <---------------
         preprocess = weights.transforms()
@@ -118,7 +119,7 @@ def _eval(coco_gt, image_ids, pred_json_path):
 
 
 if __name__ == '__main__':
-    path_to_annotations="../../../coco2017/"
+    path_to_annotations="../../../../coco2017/"
     coco_annotation_file_path = path_to_annotations+"annotations/instances_val2017.json"
     VAL_GT = path_to_annotations+"annotations/instances_val2017.json"
     VAL_IMGS = path_to_annotations+"val2017/"
@@ -127,7 +128,7 @@ if __name__ == '__main__':
     image_ids = coco_gt.getImgIds()[:MAX_IMAGES]
 
     SET_NAME="resnet50"
-    jpeg_compression_rate = 40
+    jpeg_compression_rate = 100
     min_size = 800
     max_size = 1333
     if override_prev_results or not os.path.exists(f"{SET_NAME}_bbox_results.json"):

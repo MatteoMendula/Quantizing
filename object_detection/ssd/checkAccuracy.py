@@ -1,7 +1,7 @@
 import argparse
 from SSD_creator import SSD_creator
-from evaluation_utils import *
-from inference_utils import *
+from utils.evaluation_utils import *
+from utils.inference_utils import *
 
 def get_parameters():
     parser = argparse.ArgumentParser(description='Parser for SSD300')
