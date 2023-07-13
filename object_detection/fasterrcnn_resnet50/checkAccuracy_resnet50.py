@@ -10,6 +10,8 @@ from typing import Union
 import warnings
 import os
 import json
+import time
+import torch
 
 warnings.filterwarnings('ignore')
 
@@ -20,6 +22,58 @@ import numpy as np
 from io import BytesIO # "import StringIO" directly in python2
 from PIL import Image
 import os
+
+def get_coco_object_dictionary():
+    import os
+    file_with_coco_names = "category_names.txt"
+
+    if not os.path.exists(file_with_coco_names):
+        print("Downloading COCO annotations.")
+        import urllib
+        import zipfile
+        import json
+        import shutil
+        urllib.request.urlretrieve("http://images.cocodataset.org/annotations/annotations_trainval2017.zip", "cocoanno.zip")
+        with zipfile.ZipFile("cocoanno.zip", "r") as f:
+            f.extractall()
+        print("Downloading finished.")
+        with open("annotations/instances_val2017.json", 'r') as COCO:
+            js = json.loads(COCO.read())
+        class_names = [category['name'] for category in js['categories']]
+        open("category_names.txt", 'w').writelines([c+"\n" for c in class_names])
+        os.remove("cocoanno.zip")
+        shutil.rmtree("annotations")
+    else:
+        class_names = open("category_names.txt").readlines()
+        class_names = [c.strip() for c in class_names]
+    return class_names
+
+def plot_results(best_results, inputs, classes_to_labels):
+    from matplotlib import pyplot as plt
+    import matplotlib.patches as patches
+    fig, ax = plt.subplots(1)
+    # Show original, denormalized image...
+    print(inputs.squeeze(0).shape)
+    ax.imshow(torch.transpose(inputs.squeeze(0), 0, 2).transpose(0, 1))
+    # ...with detections
+    bboxes = best_results[0]["boxes"].cpu().detach().numpy().tolist()
+    classes = best_results[0]["labels"].cpu().detach().numpy().tolist()
+    confidences = best_results[0]["scores"].cpu().detach().numpy().tolist()
+    for idx in range(len(bboxes)):
+        if confidences[idx] < 0.7:
+            continue
+
+        if classes[idx] > len(classes_to_labels):
+            continue
+
+        left, bot, right, top = bboxes[idx]
+        x, y, w, h = [val for val in [left, bot, right - left, top - bot]]
+        rect = patches.Rectangle((x, y), w, h, linewidth=1, edgecolor='r', facecolor='none')
+        ax.add_patch(rect)
+        ax.text(x, y, "{} {:.0f}%".format(classes_to_labels[classes[idx] - 1], confidences[idx]*100), bbox=dict(facecolor='white', alpha=0.5))
+    # save plot to file
+    plt.savefig("test_acc.png")
+
 
 def evaluate_coco(img_path, set_name, image_ids, coco, model, weights, jpeg_compression=70, desired_min_size=800, threshold=0.05):
     results = []
@@ -53,6 +107,10 @@ def evaluate_coco(img_path, set_name, image_ids, coco, model, weights, jpeg_comp
         #print(x.size())
         #features, regression, classification, anchors = model(x)
         pred=model(x)
+
+        classes_to_labels= get_coco_object_dictionary()
+        plot_results(pred, x[0].cpu(), classes_to_labels)
+        time.sleep(1)
 
         scores = pred[0]['scores']
         class_ids = pred[0]['labels']

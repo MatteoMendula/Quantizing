@@ -31,14 +31,34 @@ from io import BytesIO # "import StringIO" directly in python2
 from PIL import Image
 import os
 
+def parse_label(label):
+    _label = label + 1
+    if _label < 12:
+        return _label
+    
+    if 12 <= _label and _label < 25:
+        return _label + 1
+    elif 25 <= _label and _label < 27:
+        return _label + 2
+    elif 27 <= _label and _label < 41:
+        return _label + 4
+    elif 41 <= _label and _label < 61:
+        return _label + 5
+    elif 61 == _label:
+        return _label + 6
+    elif 62 == _label:
+        return _label + 8
+    elif 63 <= _label and _label < 74:
+        return _label + 9
+    elif 74 <= _label:
+        return _label + 10
+
 def evaluate_coco(img_path, set_name, image_ids, coco, model, weights):
     results = []
-
+    classes = set()
     for image_id in tqdm(image_ids):
         image_info = coco.loadImgs(image_id)[0]
         image_path = img_path + image_info['file_name']
-
-        preprocess = weights.transforms()
 
         image = Image.open(image_path)
         x = np.array(image)
@@ -47,17 +67,13 @@ def evaluate_coco(img_path, set_name, image_ids, coco, model, weights):
             continue
 
         pred = model.Inference(x)
+        # image_from_array = Image.fromarray(x)
+        # image_from_array.save("test_acc.png")
+        # time.sleep(1)
 
         scores = torch.tensor(pred[1]['scores']).cuda()
         class_ids = torch.tensor(pred[1]['labels']).cuda()
         rois = torch.tensor(pred[1]['boxes']).cuda()
-
-        # [0.93696254 0.9223482  0.9053893 ]
-        # [0. 0. 0.]
-        # [[161.04933    95.17465   350.59836   327.03842  ]
-        # [  2.1069825  50.68533   192.66422   325.72424  ]
-        # [347.48593   110.89597   499.        328.5811   ]]
-
 
         if rois.shape[0] > 0:
             # x1,y1,x2,y2 -> x1,y1,w,h
@@ -69,11 +85,10 @@ def evaluate_coco(img_path, set_name, image_ids, coco, model, weights):
             for roi_id in range(rois.shape[0]):
                 score = float(bbox_score[roi_id])
                 label = int(class_ids[roi_id])
+                # make it compliant with coco 91 classes
+                label = parse_label(label)
                 box = rois[roi_id, :]
-
-                if score < 0.75:
-                    continue
-
+                classes.add(label)
                 image_result = {
                     'image_id': image_id,
                     'category_id': label,
@@ -93,18 +108,19 @@ def evaluate_coco(img_path, set_name, image_ids, coco, model, weights):
         os.remove(filepath)
     json.dump(results, open(filepath, 'w'), indent=4)
 
-    import time
     print("len results: {}".format(len(results)))
+    print("classes: {}".format(classes))
     time.sleep(5)
 
 def _eval(coco_gt, image_ids, pred_json_path):
-
+    cat_num=[1,2,3,4,5,6,7,9,16,17,18,19,20,21,44,62,63,64,67,72]
     coco_pred = coco_gt.loadRes(pred_json_path)
-
     print("----------------------------------------------")
     print("Overall")
     print("----------------------------------------------")
     E = COCOeval(coco_gt, coco_pred, iouType='bbox')
+    E.params.imgIds = image_ids
+    # E.params.catIds = cat_num
     E.evaluate()
     E.accumulate()
     E.summarize()
