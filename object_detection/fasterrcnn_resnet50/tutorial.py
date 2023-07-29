@@ -8,6 +8,7 @@ import torch
 from io import BytesIO # "import StringIO" directly in python2
 from PIL import Image
 import os
+import numpy as np
 
 def get_compressed_image(image_path, quality=40):
     from io import BytesIO # "import StringIO" directly in python2
@@ -73,7 +74,7 @@ def plot_results(best_results, inputs, classes_to_labels):
     plt.show()
 
 
-img_path = "../images/kitti_1.png"
+img_path = "../../images/kitti_1.png"
 jpeg_compression = 20
 img = read_image(img_path)
 
@@ -99,6 +100,8 @@ start_time = time.time()
 prediction = model(batch)
 print("--- %s seconds ---" % (time.time() - start_time))
 print(prediction)
+# save predictions[0] tensor to file as np array
+np.save("prediction.npy", prediction[0]["boxes"].cpu().detach().numpy())
 
 classes_to_labels= get_coco_object_dictionary()
 plot_results(prediction, batch[0].cpu(), classes_to_labels)

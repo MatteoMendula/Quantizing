@@ -5,7 +5,7 @@ from torchvision.utils import draw_bounding_boxes
 from torchvision.transforms.functional import to_pil_image
 import time
 import torch
-from io import BytesIO # "import StringIO" directly in python2
+from io import BytesIO
 from PIL import Image
 import os
 from flask import Flask, request, jsonify
