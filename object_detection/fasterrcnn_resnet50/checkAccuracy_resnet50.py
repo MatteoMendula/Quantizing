@@ -53,7 +53,6 @@ def plot_results(best_results, inputs, classes_to_labels):
     import matplotlib.patches as patches
     fig, ax = plt.subplots(1)
     # Show original, denormalized image...
-    print(inputs.squeeze(0).shape)
     ax.imshow(torch.transpose(inputs.squeeze(0), 0, 2).transpose(0, 1))
     # ...with detections
     bboxes = best_results[0]["boxes"].cpu().detach().numpy().tolist()
@@ -104,13 +103,14 @@ def evaluate_coco(img_path, set_name, image_ids, coco, model, weights, jpeg_comp
 
         x = [preprocess(image).cuda()]
         #x[0].cuda()
-        #print(x.size())
+        if len(x[0].shape) != 3:
+            continue
         #features, regression, classification, anchors = model(x)
         pred=model(x)
 
         classes_to_labels= get_coco_object_dictionary()
-        plot_results(pred, x[0].cpu(), classes_to_labels)
-        time.sleep(1)
+        # plot_results(pred, x[0].cpu(), classes_to_labels)
+        # time.sleep(1)
 
         scores = pred[0]['scores']
         class_ids = pred[0]['labels']
@@ -186,7 +186,7 @@ if __name__ == '__main__':
     image_ids = coco_gt.getImgIds()[:MAX_IMAGES]
 
     SET_NAME="resnet50"
-    jpeg_compression_rate = 100
+    jpeg_compression_rate = 50
     min_size = 800
     max_size = 1333
     if override_prev_results or not os.path.exists(f"{SET_NAME}_bbox_results.json"):
