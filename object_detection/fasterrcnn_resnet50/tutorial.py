@@ -10,7 +10,7 @@ from PIL import Image
 import os
 import numpy as np
 
-def get_compressed_image(image_path, quality=40):
+def get_compressed_image(image_path, quality=20):
     from io import BytesIO # "import StringIO" directly in python2
     from PIL import Image
     import os
@@ -71,12 +71,18 @@ def plot_results(best_results, inputs, classes_to_labels):
         rect = patches.Rectangle((x, y), w, h, linewidth=1, edgecolor='r', facecolor='none')
         ax.add_patch(rect)
         ax.text(x, y, "{} {:.0f}%".format(classes_to_labels[classes[idx] - 1], confidences[idx]*100), bbox=dict(facecolor='white', alpha=0.5))
+    
+    plt.axis('off')
+    plt.tight_layout(pad=0)
+    plt.savefig("./kitti_detection.jpg", bbox_inches='tight', pad_inches=0)
+        
     plt.show()
 
 
 img_path = "../../images/kitti_1.png"
-jpeg_compression = 20
-img = read_image(img_path)
+jpeg_compression = 10
+img = get_compressed_image(img_path, jpeg_compression)
+# img = read_image(img_path)
 
 # Step 1: Initialize model with the best available weights
 weights = FasterRCNN_ResNet50_FPN_V2_Weights.DEFAULT

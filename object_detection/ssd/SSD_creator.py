@@ -1,8 +1,8 @@
 import os
 import torch
 import argparse
-from apex_utils import network_to_half
-from inference_utils import *
+from utils.apex_utils import network_to_half
+from utils.inference_utils import *
 from model import SSD300, ResNet
 import torch.nn as nn
 

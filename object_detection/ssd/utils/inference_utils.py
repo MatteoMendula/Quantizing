@@ -375,7 +375,14 @@ def plot_results(best_results, inputs, classes_to_labels):
             x, y, w, h = [val * 300 for val in [left, bot, right - left, top - bot]]
             rect = patches.Rectangle((x, y), w, h, linewidth=1, edgecolor='r', facecolor='none')
             ax.add_patch(rect)
-            ax.text(x, y, "{} {:.0f}%".format(classes_to_labels[classes[idx] - 1], confidences[idx]*100), bbox=dict(facecolor='white', alpha=0.5))
+            if "car" in classes_to_labels[classes[idx] - 1]:
+                ax.text(x +10, y, "{} {:.0f}%".format(classes_to_labels[classes[idx] - 1], confidences[idx]*100), bbox=dict(facecolor='white', alpha=0.5))
+            else:
+                ax.text(x - 10, y + 38, "{} {:.0f}%".format(classes_to_labels[classes[idx] - 1], confidences[idx]*100), bbox=dict(facecolor='white', alpha=0.5))
+    
+    plt.axis('off')
+    plt.tight_layout(pad=0)
+    plt.savefig("./kitti_detection.jpg", bbox_inches='tight', pad_inches=0)
     plt.show()
 
 def jpeg_size_compression(image_path, quality=10):

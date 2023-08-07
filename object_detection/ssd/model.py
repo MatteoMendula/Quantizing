@@ -1,7 +1,7 @@
 import torch
 import torch.nn as nn
 from torchvision.models.resnet import resnet18, resnet34, resnet50, resnet101, resnet152
-import ssd.utils.quantization_utils as quantization_utils 
+import utils.quantization_utils as quantization_utils 
 from pytorch_quantization import tensor_quant
 import torchvision.datasets as datasets
 from tqdm import tqdm
@@ -186,7 +186,7 @@ class SSD300Tail(nn.Module):
 
 if __name__ == "__main__":
     import time
-    import inference_utils as utils
+    from utils import inference_utils as utils
     from SSD_creator import SSD_creator
     import argparse
 
@@ -212,12 +212,12 @@ if __name__ == "__main__":
     tail = tail.eval().cuda()
     model = model.eval().cuda()
 
-    inputs = [utils.prepare_input("./kitti_1.png")]
-    inputs = [utils.prepare_input("./kitchen.jpg")]
+    inputs = [utils.prepare_input("../../images/kitti_1.png")]
+    # inputs = [utils.prepare_input("./kitchen.jpg")]
     print("inputs shape:", inputs[0].shape)
     x = utils.prepare_tensor(inputs, should_half = False)
 
-    jpeg_compression_size = utils.jpeg_size_compression("./kitchen.jpg", 90)
+    jpeg_compression_size = utils.jpeg_size_compression("../../images/kitchen.jpg", 90)
     print("JPEG compression size:", jpeg_compression_size)
     # detemine size of x in bytes
     image_size = x.element_size() * x.nelement()
