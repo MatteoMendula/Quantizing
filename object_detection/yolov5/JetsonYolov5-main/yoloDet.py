@@ -205,10 +205,13 @@ class YoloTRT():
         color = color or [random.randint(0, 255) for _ in range(3)]
         c1, c2 = (int(x[0]), int(x[1])), (int(x[2]), int(x[3]))
         cv2.rectangle(img, c1, c2, color, thickness=tl, lineType=cv2.LINE_AA)
+
+        c1 = (int(x[0]) - 100, int(x[1]))
+        c2 = (c1[0] + 100, c1[1])
         if label:
-            tf = max(tl - 1, 1)  # font thickness
+            tf = 1
             t_size = cv2.getTextSize(label, 0, fontScale=tl / 1.5, thickness=tf)[0]
-            c2 = c1[0] + t_size[0], c1[1] - t_size[1] - 3
+            c2 = c1[0] + t_size[0] + 30, c1[1] - t_size[1] - 20
             alpha = 0.5  # Opacity value between 0 (fully transparent) and 1 (fully opaque)
             overlay = img.copy()
             border_color = (0, 0, 0)  # Black border color
@@ -216,7 +219,7 @@ class YoloTRT():
             cv2.rectangle(overlay, c1, c2, border_color, thickness=tl + border_thickness, lineType=cv2.LINE_AA)  # Black border rectangle
             cv2.rectangle(overlay, c1, c2, (255, 255, 255), -1, cv2.LINE_AA)  # Filled rectangle
             cv2.addWeighted(overlay, alpha, img, 1 - alpha, 0, img)
-            cv2.putText(img, label, (c1[0], c1[1] - 2), 0, tl / 1.5, [0, 0, 0], thickness=tf, lineType=cv2.LINE_AA)
+            cv2.putText(img, label, (c1[0] + 2, c1[1] - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.8, (0,0,0), 1, cv2.LINE_AA)
 
     def original_PlotBbox(self, x, img, color=None, label=None, line_thickness=None):
         tl = (line_thickness or round(0.002 * (img.shape[0] + img.shape[1]) / 2) + 1)  # line/font thickness
