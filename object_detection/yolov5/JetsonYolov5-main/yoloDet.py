@@ -212,12 +212,12 @@ class YoloTRT():
             tf = 1
             t_size = cv2.getTextSize(label, 0, fontScale=tl / 1.5, thickness=tf)[0]
             c2 = c1[0] + t_size[0] + 30, c1[1] - t_size[1] - 20
-            alpha = 0.5  # Opacity value between 0 (fully transparent) and 1 (fully opaque)
+            alpha = 0.8  # Opacity value between 0 (fully transparent) and 1 (fully opaque)
             overlay = img.copy()
             border_color = (0, 0, 0)  # Black border color
             border_thickness = 2  # Thickness of the black border
             cv2.rectangle(overlay, c1, c2, border_color, thickness=tl + border_thickness, lineType=cv2.LINE_AA)  # Black border rectangle
-            cv2.rectangle(overlay, c1, c2, (255, 255, 255), -1, cv2.LINE_AA)  # Filled rectangle
+            cv2.rectangle(overlay, c1, c2, (230, 230, 230), -1, cv2.LINE_AA)  # Filled rectangle
             cv2.addWeighted(overlay, alpha, img, 1 - alpha, 0, img)
             cv2.putText(img, label, (c1[0] + 2, c1[1] - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.8, (0,0,0), 1, cv2.LINE_AA)
 
